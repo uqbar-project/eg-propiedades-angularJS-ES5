@@ -15,8 +15,12 @@ angular.module('booking-app')
   .state('main.alta_propiedades', {
     url: "/propiedades/crear",
     templateUrl: "app/modules/propiedades/views/form.html",
-    controller: "CrearPropiedadCtrl",
-    controllerAs: "formCtrl"
+    controller: "PropiedadCtrl",
+    controllerAs: "formCtrl",
+    resolve: {
+      propiedad: function () { return {}; },
+      nombreController: function () { return "alta"; }
+    }
   })
   .state('main.alta_propiedades.hotel', {
     views : { "tipo-propiedad": { templateUrl: "app/modules/propiedades/views/hotelForm.html" } }
@@ -27,12 +31,13 @@ angular.module('booking-app')
   .state('main.editar_propiedades', {
     url: "/propiedades/editar/:id",
     templateUrl: "app/modules/propiedades/views/form.html",
-    controller: "EditarPropiedadCtrl",
+    controller: "PropiedadCtrl",
     controllerAs: "formCtrl",
     resolve: {
       propiedad: function (PropiedadesHome, $stateParams) {
         return PropiedadesHome.get(parseInt($stateParams.id));
-      }
+      },
+      nombreController: function () { return "editar"; }
     }
   })
   .state('main.editar_propiedades.hotel', {
