@@ -30,7 +30,7 @@
                             <td>{{ propiedad.estado }}</td>
                             <td>{{ propiedad.tipo.nombre }}</td>
                             <td class="center">
-                                <a ui-sref="main.editar_propiedades({ id: propiedad.id })" class="btn btn-primary btn-circle"><i class="fa fa-pencil-square-o"></i></a>
+                                <a ui-sref="main.editar_propiedades.{{ propiedad.tipo.nombre.toLowerCase() }}({ id: propiedad.id })" class="btn btn-primary btn-circle"><i class="fa fa-pencil-square-o"></i></a>
                                 <a ng-click="listadoCtrl.delete(propiedad.id)" class="btn btn-danger btn-circle"><i class="fa fa-times"></i></a>
                             </td>
                         </tr>

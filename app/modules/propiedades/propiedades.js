@@ -18,6 +18,12 @@ angular.module('booking-app')
     controller: "CrearPropiedadCtrl",
     controllerAs: "formCtrl"
   })
+  .state('main.alta_propiedades.hotel', {
+    views : { "tipo-propiedad": { templateUrl: "app/modules/propiedades/views/hotelForm.html" } }
+  })
+  .state('main.alta_propiedades.particular', {
+    views : { "tipo-propiedad": { templateUrl: "app/modules/propiedades/views/particularForm.html" } }
+  })
   .state('main.editar_propiedades', {
     url: "/propiedades/editar/:id",
     templateUrl: "app/modules/propiedades/views/form.html",
@@ -28,5 +34,11 @@ angular.module('booking-app')
         return PropiedadesHome.get(parseInt($stateParams.id));
       }
     }
-  });
+  })
+  .state('main.editar_propiedades.hotel', {
+    views : { "tipo-propiedad": { templateUrl: "app/modules/propiedades/views/hotelForm.html" } }
+  })
+  .state('main.editar_propiedades.particular', {
+    views : { "tipo-propiedad": { templateUrl: "app/modules/propiedades/views/particularForm.html" } }
+  })
 });
