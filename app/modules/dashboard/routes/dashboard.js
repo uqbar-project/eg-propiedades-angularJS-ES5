@@ -3,6 +3,8 @@ angular.module('booking-app')
   return $stateProvider
   .state('main.dashboard', {
     url: "/",
-    templateUrl: "app/modules/dashboard/dashboard.html"
+    templateUrl: "app/modules/dashboard/dashboard.html",
+    controller: "DashboardCtrl",
+    controllerAs:"dashboardCtrl"
   });
 });

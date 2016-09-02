@@ -20,6 +20,7 @@
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
   <![endif]-->
+
 </head>
 <body ng-app="booking-app">
   <div ui-view="layout"></div>
@@ -34,9 +35,12 @@
   <script src="dist/js/sb-admin-2.js"></script>
   
   <script src="app/app.js"></script>
-  <script src="app/modules/dashboard/dashboard.js"></script>
-  <script src="app/services/propiedadesHome.js"></script>
-  <script src="app/modules/propiedades/controllers/listadoPropiedadesCtrl.js"></script>
+  <script src="app/modules/dashboard/routes/dashboard.js"></script>
+  <script src="app/modules/dashboard/controllers/dashboard.js"></script>
   <script src="app/modules/propiedades/propiedades.js"></script>
+  <script src="app/modules/propiedades/controllers/listadoPropiedadesCtrl.js"></script>
+  <script src="app/services/propiedadesHome.js"></script>
+  <script src="app/directives/cajita/cajita.js"></script>
+
 </body>
 </html>
