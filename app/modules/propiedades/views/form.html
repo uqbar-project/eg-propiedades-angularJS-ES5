@@ -14,15 +14,15 @@
                         <form role="form">
                             <div class="form-group">
                                 <label>Dirección</label>
-                                <input class="form-control" ng-model="crearCtrl.propiedad.direccion" placeholder="Por ejemplo: Mozart 2300">
+                                <input class="form-control" ng-model="formCtrl.propiedad.direccion" placeholder="Por ejemplo: Mozart 2300">
                             </div>
                             <div class="form-group">
                                 <label>Localidad</label>
-                                <input class="form-control" ng-model="crearCtrl.propiedad.localidad" placeholder="Por ejemplo: Lugano, Buenos Aires.">
+                                <input class="form-control" ng-model="formCtrl.propiedad.localidad" placeholder="Por ejemplo: Lugano, Buenos Aires.">
                             </div>
                             <div class="form-group">
                                 <label>Estado</label>
-                                <select class="form-control" ng-model="crearCtrl.propiedad.estado">
+                                <select class="form-control" ng-model="formCtrl.propiedad.estado">
                                     <option>Abierto</option>
                                     <option>Refaccionando</option>
                                     <option>Cerrado</option>
@@ -30,29 +30,29 @@
                             </div>
                             <div class="form-group">
                                 <label>Descripción</label>
-                                <textarea class="form-control" ng-model="crearCtrl.propiedad.descripcion" rows="3"></textarea>
+                                <textarea class="form-control" ng-model="formCtrl.propiedad.descripcion" rows="3"></textarea>
                             </div>
                             <div class="form-group">
                                 <label>Tipo de propiedad</label>
-                                <select class="form-control" ng-options="tipo as tipo.nombre for tipo in crearCtrl.tiposDePropiedad track by tipo.nombre" ng-model="crearCtrl.propiedad.tipo"></select>
+                                <select class="form-control" ng-options="tipo as tipo.nombre for tipo in formCtrl.tiposDePropiedad track by tipo.nombre" ng-model="formCtrl.propiedad.tipo"></select>
                             </div>
-                            <div ng-switch="crearCtrl.propiedad.tipo.nombre">
+                            <div ng-switch="formCtrl.propiedad.tipo.nombre">
                                 <div ng-switch-when="Hotel" class="form-group">
                                     <label>Cantidad de estrellas</label>
-                                    <input class="form-control" ng-model="crearCtrl.propiedad.tipo.cantidadEstrellas" placeholder="Del 1 a 5">
+                                    <input class="form-control" ng-model="formCtrl.propiedad.tipo.cantidadEstrellas" placeholder="Del 1 a 5">
                                 </div>
                                 <div ng-switch-when="Particular">
                                     <div class="form-group">
                                         <label>Antigüedad</label>
-                                        <input class="form-control" ng-model="crearCtrl.propiedad.tipo.antiguedad" placeholder="Por ejemplo: 20 años">
+                                        <input class="form-control" ng-model="formCtrl.propiedad.tipo.antiguedad" placeholder="Por ejemplo: 20 años">
                                     </div>
                                     <div class="form-group">
                                         <label>Cantidad de baños</label>
-                                        <input class="form-control" ng-model="crearCtrl.propiedad.tipo.banios" placeholder="Por ejemplo: 1">
+                                        <input class="form-control" ng-model="formCtrl.propiedad.tipo.banios" placeholder="Por ejemplo: 1">
                                     </div>
                                 </div>
                             </div>
-                            <button type="submit" class="btn btn-outline btn-primary" ng-click="crearCtrl.crear()">Agregar</button>
+                            <button type="submit" class="btn btn-outline btn-primary" ng-click="formCtrl.guardar()">Guardar</button>
                             <button type="reset" class="btn btn-outline btn-danger">Reset</button>
                             <button ui-sref="main.listado_propiedades" class="btn btn-outline btn-warning">Volver</button>
                         </form>
