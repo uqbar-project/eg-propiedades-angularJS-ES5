@@ -5,6 +5,7 @@ angular.module('booking-app', ['ui.router'])
   $urlRouterProvider.otherwise('/');
   return $locationProvider.html5Mode(true);
 })
+.constant('_', window._)
 .config(function($stateProvider) {
   return $stateProvider
   .state('main', {
