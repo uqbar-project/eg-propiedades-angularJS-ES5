@@ -13,7 +13,9 @@
 ---
 
 Para correr la branch `master` solo hace falta `bower install`. 
-En las branch que le siguen (**steps**), requieren tanto `bower install` y `npm install` (además del servidor levantado: `npm start` o `node server.js`)
+En las branch que le siguen (**steps**), requieren tanto `bower install` como `npm install` (además del servidor levantado: `npm start` o `node server.js`)
+
+Tener en cuenta que server se levanta en **http://localhost:3000**
 
 # Enunciado
 Para mostrar cómo construir una SPA en Angular elegimos el siguiente dominio:
