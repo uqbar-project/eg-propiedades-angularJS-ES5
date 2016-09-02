@@ -17,6 +17,22 @@ function PropiedadesHome() {
 	self.getAll = function () {
 		return propiedades;
 	};
+
+	self.get = function (id) {
+		return _.find(propiedades, { id: id });
+	};
+	
+	self.create = function (propiedad) {
+		propiedades.push(_.assign(propiedad, { id : propiedadIdActual++ }));
+	};
+
+	self.update = function (propiedad) {
+		_.assign(_.find(propiedades, function (obj) { _.isMatch(obj, {id: propiedad.id})}), propiedad)
+	}
+
+	self.delete = function (id) {
+		_.remove(propiedades, function(obj) { return _.isMatch(obj, { id: id }); });
+	}
 };
 
 angular.module("booking-app")
