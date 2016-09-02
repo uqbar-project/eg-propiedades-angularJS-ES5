@@ -14,15 +14,15 @@ angular.module('booking-app')
   })
   .state('main.alta_propiedades', {
     url: "/propiedades/crear",
-    templateUrl: "app/modules/propiedades/views/create.html",
+    templateUrl: "app/modules/propiedades/views/form.html",
     controller: "CrearPropiedadCtrl",
-    controllerAs: "crearCtrl"
+    controllerAs: "formCtrl"
   })
   .state('main.editar_propiedades', {
     url: "/propiedades/editar/:id",
-    templateUrl: "app/modules/propiedades/views/edit.html",
+    templateUrl: "app/modules/propiedades/views/form.html",
     controller: "EditarPropiedadCtrl",
-    controllerAs: "editarCtrl",
+    controllerAs: "formCtrl",
     resolve: {
       propiedad: function (PropiedadesHome, $stateParams) {
         return PropiedadesHome.get(parseInt($stateParams.id));

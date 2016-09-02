@@ -3,7 +3,7 @@ function CrearPropiedadCtrl(PropiedadesHome) {
   self.propiedad = {};
   self.tiposDePropiedad = [{ nombre: "Hotel" }, { nombre: "Particular"}]
 
-  self.crear = function () {
+  self.guardar = function () {
   	PropiedadesHome.create(self.propiedad);
   }
 };

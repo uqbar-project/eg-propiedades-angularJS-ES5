@@ -3,7 +3,7 @@ function EditarPropiedadCtrl(PropiedadesHome, propiedad) {
   self.propiedad = propiedad;
   self.tiposDePropiedad = [{ nombre: "Hotel" }, { nombre: "Particular"}]
 
-  self.editar = function () {
+  self.guardar = function () {
   	PropiedadesHome.update(self.propiedad);
   }
 };
