@@ -1,0 +1,14 @@
+{
+  "name": "booking-dds",
+  "version": "1.0.0",
+  "dependencies": {
+    "express": "^4.14.0"
+  },
+  "devDependencies": {},
+  "engines": {
+    "node": "4.2.2"
+  },
+  "scripts": {
+    "start": "node server.js"
+  }
+}
