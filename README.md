@@ -21,8 +21,25 @@ Tener en cuenta que server se levanta en **http://localhost:3000**
 Para mostrar cómo construir una SPA en Angular elegimos el siguiente dominio:
 
 *“Booking-dds”* es un portal de búsqueda y reserva de estadías en propiedades (hoteles, casas y departamentos particulares). El portal ofrece a dueños de todo el país incluir su propiedad gratuitamente.
-En este ejercicio nos enfocaremos en cómo se registran, modifican, listan y dan de baja las propiedades.
-También mostraremos un pequeño `dashboard` con el fin de dar un ejemplo de `directiva`.
+
+Al iniciar la aplicación, debemos mostrar un Dashboard, algo así como un tablero que muestra el estado general de la cuenta:
+
+* Cantidad de mensajes que enviaron personas interesadas en propiedades publicadas por el usuario
+* Cantidad de “campañas” o ventas de propiedades publicadas recientemente
+* Cantidad de ventas de propiedades efectuadas en el último tiempo
+* Cantidad de quejas recibidas por parte de los usuarios
+
+En un menú lateral de opciones varias, debe aparecer la posibilidad de listar las propiedades en venta, que pueden ser
+
+* Hoteles
+* Casas particulares
+* Pueden agregarse otros ejemplos a futuro
+	
+Al hacer click en alguna de las propiedades debe navegar hacia una página de edición que debe considerar los datos particulares de cada propiedad. Todas las propiedades tienen dirección, localidad, estado (Abierto, En Refacciones, Cerrado) y descripción. Los hoteles definen la cantidad de estrellas, las casas y departamentos particulares muestran la antigüedad en años y la cantidad de baños que tienen.
+
+# Explicación del ejercicio
+Se encuentra en [este apunte](https://docs.google.com/document/d/178YO7zrtzO8qlI5EIoaKkixFx19ONohrTsD0EwmjOAQ/edit?usp=sharing)
+
 
 # Transformaciones paso a paso
 - Creación del layout: [step-1](https://github.com/uqbar-project/eg-propiedades-angular/commit/f99b8789ee5e899821aef6a0ca9b242bed762520)
