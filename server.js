@@ -6,7 +6,7 @@ app.use("/bower_components", express.static("bower_components"));
 app.use("/dist", express.static("dist"));
 
 app.get('/*', function (req, res) {
-  res.sendfile('index.html');
+  res.sendFile('index.html');
 });
 
 app.listen(3000, function () {
