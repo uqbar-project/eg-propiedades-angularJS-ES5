@@ -23,7 +23,7 @@
 
 </head>
 <body ng-app="booking-app">
-  <div ui-view="layout"></div>
+  <div ng-include="'app/layout/layout.html'"></div>
 
   <script src="bower_components/angular/angular.js"></script>
   <script src="bower_components/lodash/lodash.js"></script>
@@ -35,7 +35,6 @@
   <script src="dist/js/sb-admin-2.js"></script>
   
   <script src="app/routes.js"></script>
-  <script src="app/modules/dashboard/routes/dashboard.js"></script>
   <script src="app/modules/dashboard/controllers/dashboard.js"></script>
   <script src="app/modules/propiedades/propiedades.js"></script>
   <script src="app/modules/propiedades/controllers/listadoPropiedadesCtrl.js"></script>

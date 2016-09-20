@@ -1,9 +1,9 @@
 <div id="wrapper">
 	<nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
-		<div ui-view="topbar"></div>
-		<div ui-view="sidebar"></div>
+		  <ng-include src="'app/layout/topbar.html'"></ng-include>
+		  <ng-include src="'app/layout/sidebar.html'"></ng-include>
 	</nav>
 	<div id="page-wrapper">
-		<div ui-view="container"></div>
+		<div ui-view=""></div>
 	</div>
-</div>
+</div>  
