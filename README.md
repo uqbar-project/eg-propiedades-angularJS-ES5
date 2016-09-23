@@ -4,12 +4,14 @@
 - [nodejs + npm](https://nodejs.org/en/download/)
 - [bower](https://bower.io/)
 
-# Setup:
-- `npm install -g bower`
-- `bower install`
-- `npm install`
-- `npm start` o `node server.js`
+# Setup
 
+```bash
+npm install -g bower
+bower install
+npm install
+npm start` o `node server.js
+```
 ---
 
 Para correr la branch `master` solo hace falta `bower install`. 
