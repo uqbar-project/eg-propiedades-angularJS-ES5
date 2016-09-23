@@ -1,5 +1,7 @@
 # Sistema de administración de propiedades en Angular
 
+![video](video/demo.gif)
+
 # Pre-requisitos:
 - [nodejs + npm](https://nodejs.org/en/download/)
 - [bower](https://bower.io/)
