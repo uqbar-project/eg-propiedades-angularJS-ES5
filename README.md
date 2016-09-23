@@ -9,10 +9,10 @@
 # Setup
 
 ```bash
-npm install -g bower
-bower install
-npm install
-npm start` o `node server.js
+$ npm install -g bower
+$ bower install
+$ npm install
+$ npm start (o node server.js)
 ```
 ---
 
